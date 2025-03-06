@@ -1,3 +1,5 @@
+import java.net.Socket;
+
 public class PeyPal implements PeymantSterategy {
     // when a class implements an interface u must override thy methods first
 
@@ -13,8 +15,9 @@ public class PeyPal implements PeymantSterategy {
     public void pay(double amount) {
         System.out.println("--------------------------------------");
         System.out.println("PayPal ");
-        System.out.println("Paymant : Currency : USD : from email : " + ownerEmail);
-        System.out.println("Amount : " + amount + "USD");
+        System.out.println();
+        System.out.println("Paymant : Currency : USD : from email :   " + ownerEmail);
+        System.out.println("Amount : " + amount + "4");
         System.out.println("Checking PayPal balance");
         System.out.println("-------------------------------------");
     }

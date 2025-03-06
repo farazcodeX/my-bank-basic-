@@ -14,10 +14,10 @@ public class CreditCardPay implements PeymantSterategy{
     public void pay(double amount) {
         System.out.println("--------------------------------------");
         System.out.println("shaba (electronic creditcard payment)");
-        System.out.println("Paymant : Currency : USD : from" + cardNumber + "in the Name : " + ownerName);
-        System.out.println("Amount : " + amount);
+        System.out.println("Paymant : Currency : USD : from    " + cardNumber + "   in the Name : " + ownerName);
+        System.out.println("Amount : " + amount + "$");
         System.out.println("Checking creditcard balance");
-        System.out.println("-------------------------------------");
+        //System.out.println("-------------------------------------");
     }
 
     @Override
