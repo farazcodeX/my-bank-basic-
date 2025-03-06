@@ -1,15 +1,32 @@
 public class BitCoinPay implements PeymantSterategy {
 
+    String walletAdress;
+
+    public BitCoinPay(String adress)
+    {
+        this.walletAdress = adress;
+    }
+
     @Override
     public void pay(double amount) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'pay'");
+       
+        System.out.println("--------------------------------------");
+        System.out.println("Paymant : Currency : BitCoin : from" + walletAdress);
+        System.out.println("Amount : " + amount);
+        System.out.println("Checking wallet balnce ");
+        System.out.println("-------------------------------------");
+        
     }
 
     @Override
     public String getPaymentDetale() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getPaymentDetale'");
+
+        String payInfo = "Payment successfully . from adress" + walletAdress + "BTC" + "  with using digital currensy : BitCoin.tm";
+
+
+        return payInfo; 
+        
+       
     }
     
 }

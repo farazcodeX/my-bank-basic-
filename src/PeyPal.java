@@ -1,17 +1,31 @@
 public class PeyPal implements PeymantSterategy {
-
     // when a class implements an interface u must override thy methods first
+
+    String ownerEmail;
+
+    // dependency injection trough contructor
+    public PeyPal(String email)
+    {
+        this.ownerEmail = email;
+    }
 
     @Override
     public void pay(double amount) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'pay'");
+        System.out.println("--------------------------------------");
+        System.out.println("PayPal ");
+        System.out.println("Paymant : Currency : USD : from email : " + ownerEmail);
+        System.out.println("Amount : " + amount + "USD");
+        System.out.println("Checking PayPal balance");
+        System.out.println("-------------------------------------");
     }
 
     @Override
     public String getPaymentDetale() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getPaymentDetale'");
+
+        String payInfo = "Payment successfully . from email" + ownerEmail + "PayPal.TM ";
+
+        return payInfo;
+       
     }
     
 }
