@@ -14,7 +14,7 @@ public class Main {
         peyPal1.pay(300);
         customer2.paymentHistory.add(peyPal1.getPaymentDetale());
 
-        customer2.displayCustomerInfo();
+      
 
         CreditCardPay creditPay2 = new CreditCardPay("1269", "ALi");
         PeyPal peyPal2 = new PeyPal("alizTR1258@gmail.com");
@@ -23,7 +23,7 @@ public class Main {
 
         customer1.paymentHistory.add(creditPay2.getPaymentDetale());
         customer1.paymentHistory.add(peyPal2.getPaymentDetale());
-        customer1.displayCustomerInfo();
+        
 
         BitCoinPay bitCoinPay3 = new BitCoinPay("mbnDDGR096");
         bitCoinPay3.pay(0.7);
@@ -35,7 +35,7 @@ public class Main {
 
         customer3.displayCustomerInfo();
 
-
-        
+         customer1.displayCustomerInfo();
+        customer2.displayCustomerInfo();
     }
 }

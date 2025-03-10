@@ -10,7 +10,7 @@ public class RegularCustomer extends Customer{
         @Override
     public void displayCustomerInfo() {
 
-        System.out.println("Regular Customer" + name);
+        System.out.println("Regular Customer  : " + name);
         
         for(int i = 0; i < paymentHistory.size(); ++i)
         {

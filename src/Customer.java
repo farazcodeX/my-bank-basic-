@@ -6,11 +6,12 @@ abstract class Customer {
 
     String name;
     
-    ArrayList<String> paymentHistory = new ArrayList<>();
+    ArrayList<String> paymentHistory;
 
     public Customer(String name)
     {
         this.name = name;
+        paymentHistory = new ArrayList<>();
 
     }
     public abstract void displayCustomerInfo();

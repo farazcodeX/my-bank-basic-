@@ -4,6 +4,7 @@ public class PremiumCustomer extends Customer {
 
             super(name);
             
+            
         }
     
         @Override

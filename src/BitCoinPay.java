@@ -14,7 +14,7 @@ public class BitCoinPay implements PeymantSterategy {
         System.out.println("Paymant : Currency : BitCoin : from  : " + walletAdress);
         System.out.println("Amount : " + amount + "BTC");
         System.out.println("Checking wallet balnce ");
-        //System.out.println("-------------------------------------");
+        System.out.println("-------------------------------------");
         
     }
 
